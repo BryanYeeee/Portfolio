@@ -20,8 +20,9 @@ module.exports = {
       ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       bounce: 'bounce 1s infinite',
-      fadeout: 'fadeout 0.1s forwards',
-      title: 'title 1s forwards'
+      fadeout: 'fadeout 0.5s forwards',
+      fadein: 'fadeout 2s reverse',
+      title: 'title 2s forwards'
     },
     aria: {
       busy: 'busy="true"',
@@ -558,24 +559,18 @@ module.exports = {
           opacity: 1
         },
         '100%': {
-          opacity:0,
-          display: 'none'
+          opacity: 0
         }
       },
       title: {
         '0': {
           left: '50%',
-          top: '50%',
-          'translate-y': '-50%',
-          'translate-x': '-50%',
+          transform: 'translate(-50%, -50%)',
           display: 'absolute'
         },
         '100%': {
-          left: '2rem',
-          top: '2rem',
-          'translate-y': '0%',
-          'translate-x': '0%',
-          display: 'absolute'
+          left: '0%',
+          transform: 'translate(-100%, -50%)',
         }
 
       }

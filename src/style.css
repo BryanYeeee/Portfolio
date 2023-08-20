@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: DenseFont;
+    src: url(./assets/Dense-Regular.otf);
+}
+
+
+* {
+    font-family: DenseFont;
+}
+
+/* text-20xl and text-10xl not always loaded*/
+
+@layer components {
+    .absolute-center {
+        @apply absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 transition-all
+    }
+}

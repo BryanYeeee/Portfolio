@@ -1,6 +1,6 @@
 
-import Title from "../comps/Title"
-import TransitionWrapper from "../comps/TransitionWrapper"
+import Title from "@/comps/Title"
+import TransitionWrapper from "@/comps/TransitionWrapper"
 export default function Index() {
 
   return (
